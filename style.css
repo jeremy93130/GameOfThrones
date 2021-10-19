@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Code+Pro&display=swap');
+
+body {
+    background-repeat: no-repeat;
+    background-size  : 100%;
+}
+
+section {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(31, 3, 3, 1) 41%, rgba(138, 27, 19, 1) 71%, rgba(118, 13, 0, 1) 90%);
+}
+
+form {
+    width          : 25%;
+    justify-content: center;
+}
+
+#form {
+    display        : flex;
+    justify-content: center;
+}
+
+.titres {
+    height               : 200px;
+    background-image     : url(/game-of-thrones-ce-que-cette-serie-culte-nous-apprend-sur-le-pouvoir-en-entreprise-960913.jpg);
+    background-size      : cover;
+    background-repeat    : no-repeat;
+    background-position-y: center;
+}
+
+.flex {
+    display       : flex;
+    flex-direction: column;
+    margin        : 0 25%;
+
+
+}
+
+.personnages {
+    display        : flex;
+    flex-wrap      : wrap;
+    color          : darkgrey;
+    align-items    : center;
+    justify-content: space-between;
+
+}
+
+#img {
+    border            : 2px solid rgba(255, 244, 244, 0.445);
+    margin-bottom     : 10px;
+    border-right-width: 4px;
+    overflow          : hidden;
+    width             : 200px;
+    height            : auto;
+}
+
+.actor {
+    margin     : 10px 30px;
+    font-family: 'Source Code Pro';
+
+}
+
+.grid {
+    text-align: center;
+}
+
+.grid p {
+    margin: 10px 0;
+}
+
+img {
+    width : 200px;
+    height: 200px;
+}
