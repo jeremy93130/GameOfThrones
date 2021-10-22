@@ -10,7 +10,7 @@ body {
 
 section {
     background-color: black;
-    background-image: url(/drogon.png);
+    background-image: url(/img/drogon.png);
     background-repeat:repeat-y;
     background-position: 30% 50%;
     display   : flex;
@@ -35,7 +35,7 @@ section {
 
 .grid {
     width : 20%;
-    margin: 40px 40px;
+    margin: 70px 40px;
 }
 
 .grid p {
@@ -63,8 +63,22 @@ section {
 
 .titres {
     height             : 200px;
-    background-image   : url(/game-of-thrones-ce-que-cette-serie-culte-nous-apprend-sur-le-pouvoir-en-entreprise-960913.jpg);
+    background-image   : url(img/game-of-thrones-ce-que-cette-serie-culte-nous-apprend-sur-le-pouvoir-en-entreprise-960913.jpg);
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: contain;
+}
+
+#formu {
+    height: 0;
+}
+
+.blason img {
+    position: relative;
+    top: 30px;
+    height: 100px;
+}
+
+#baratheon {
+    height: 100px;
 }
