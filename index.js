@@ -14,18 +14,22 @@ $(function () {
     function afficher(data) {
         data.forEach(function (personnage) {
 
-            $(".personnages").html($(".personnages").html() + `<div class="grid"><div id="img"><img src="${personnage.imageUrl}"> <p class="actor">${personnage.fullName} </p><p class="actor">${personnage.title}</p> </div> </div>`)
+            $(".personnages").html($(".personnages").html() +
+                `<div class="grid">
+                <div id="img" style="background-image: url(${personnage.imageUrl})"</div>
+                 </div> 
+                 <span> <p class="actor">${personnage.fullName} </p> <p class="actor"> ${personnage.title}</p> </span></div>`)
 
         })
     }
 
-    function search(data) {
-        data.filter(function (gotNames) {
-            gotNames = $("input").val() + gotNames.fullName
-            console.log(gotNames)
+    $('input').keyup(function () {
+        var inputValue = $("#formu").val()
+
+        var filteredCharacters = characters.filter(function (character) {
+            return character.fullName.toLowerCase().includes(inputValue.toLowerCase())
         })
 
-    } $('form').submit(function (e) {
-        e.preventDefault()
+        displayList(filteredCharacters)
     })
 })

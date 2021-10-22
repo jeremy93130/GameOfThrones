@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
     background-repeat: no-repeat;
@@ -7,69 +9,62 @@ body {
 }
 
 section {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(31, 3, 3, 1) 41%, rgba(138, 27, 19, 1) 71%, rgba(118, 13, 0, 1) 90%);
-}
-
-form {
-    width          : 25%;
-    justify-content: center;
-}
-
-#form {
-    display        : flex;
+    background-color: black;
+    background-image: url(/drogon.png);
+    background-repeat:repeat-y;
+    background-position: 30% 50%;
+    display   : flex;
+    flex-wrap : wrap;
     justify-content: center;
 }
 
 .titres {
-    height               : 200px;
-    background-image     : url(/game-of-thrones-ce-que-cette-serie-culte-nous-apprend-sur-le-pouvoir-en-entreprise-960913.jpg);
-    background-size      : cover;
-    background-repeat    : no-repeat;
-    background-position-y: center;
+    background-position: center;
 }
 
 .flex {
     display       : flex;
     flex-direction: column;
-    margin        : 0 25%;
-
-
 }
 
 .personnages {
     display        : flex;
     flex-wrap      : wrap;
-    color          : darkgrey;
-    align-items    : center;
-    justify-content: space-between;
-
-}
-
-#img {
-    border            : 2px solid rgba(255, 244, 244, 0.445);
-    margin-bottom     : 10px;
-    border-right-width: 4px;
-    overflow          : hidden;
-    width             : 200px;
-    height            : auto;
-}
-
-.actor {
-    margin     : 10px 30px;
-    font-family: 'Source Code Pro';
-
+    justify-content: center;
 }
 
 .grid {
-    text-align: center;
+    width : 20%;
+    margin: 40px 40px;
 }
 
 .grid p {
-    margin: 10px 0;
+    text-align      : center;
+    font-family     : "Pacifico", cursive;
+    border          : rgba(29, 28, 28, 0.452) 2px solid;
+    background-color: rgba(29, 28, 28, 0.63);
+    color           : white;
 }
 
-img {
-    width : 200px;
-    height: 200px;
+.actor {
+    margin: 0;
+    color : white;
+}
+
+#img {
+    height             : 200px;
+    background-repeat  : no-repeat;
+    background-position: 20% 20%;
+    background-size    : 300px 250px;
+    border-radius      : 40% 40% 0 0;
+}
+
+
+
+.titres {
+    height             : 200px;
+    background-image   : url(/game-of-thrones-ce-que-cette-serie-culte-nous-apprend-sur-le-pouvoir-en-entreprise-960913.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: contain;
 }
